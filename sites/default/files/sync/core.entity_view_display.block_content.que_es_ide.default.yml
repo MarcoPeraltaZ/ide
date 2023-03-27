@@ -1,0 +1,27 @@
+uuid: 9cd3ded0-6762-42a7-9156-638acc0bca7c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.que_es_ide
+    - field.field.block_content.que_es_ide.field_texto
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.que_es_ide.default
+targetEntityType: block_content
+bundle: que_es_ide
+mode: default
+content:
+  field_texto:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  langcode: true

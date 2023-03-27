@@ -1,0 +1,17 @@
+uuid: 3b12b022-1f6a-4776-a7bc-1063547c986c
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Qué es'
+type: que_es
+description: ''
+help: ''
+new_revision: true
+preview_mode: 2
+display_submitted: false

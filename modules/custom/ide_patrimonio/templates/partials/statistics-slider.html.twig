@@ -1,0 +1,51 @@
+{{ attach_library('ide_patrimonio/ide_patrimonio_slider') }}
+<div class="d-none d-sm-block">
+  <div class="slider-capas">
+    <h2 class="title-ide">
+      Estadísticas
+    </h2>
+    <div class="row mt-18">
+      <div class="col-md-1 custom-navigation center-vertical">
+        <div>
+          <a href="#" class="flex-prev">
+            <svg id="Grupo_14633" data-name="Grupo 14633" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <g id="Grupo_14384" data-name="Grupo 14384" transform="translate(32) rotate(90)">
+                <rect id="Rectángulo_3845" data-name="Rectángulo 3845" width="32" height="32"/>
+                <path id="Icon_material-keyboard-arrow-up" data-name="Icon material-keyboard-arrow-up" d="M2.129,0l6.93,6.915L15.989,0l2.129,2.129L9.059,11.188,0,2.129Z" transform="translate(7 10)" fill="#fff"/>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-10 flexslider-estadisticas carousel carousel-capas">
+        <ul class="slides">
+          {% for capa in capasEstadisticas %}
+            <li>
+              <div class="text-center card-estadistica">
+                <div><img class="card-estadistica-capa-icono" src="{{ capa.icono }}"></div>
+                <div class="font-s18 max-lines-4">{{ capa.name }}</div>
+                <div class="font-s60">{{ capa.cantidadPatrimonios }}</div>
+                <div class="font-s14">{{ capa.cantidadPatrimoniosNacional }} a nivel nacional</div>
+                <div class="mt-23"><a href="{{ capa.visor }}" target="_blank" class="m-0 px-3 py-2 btn btn-ide-patrimonio">Revisar en mapa</a></div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-1 custom-navigation center-vertical">
+        <div>
+          <a href="#" class="flex-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <g id="Grupo_14632" data-name="Grupo 14632" transform="translate(-1265 -524)">
+                <g id="Grupo_14384" data-name="Grupo 14384" transform="translate(1897 288) rotate(90)">
+                  <rect id="Rectángulo_3845" data-name="Rectángulo 3845" width="32" height="32" transform="translate(236 600)"/>
+                  <path id="Icon_material-keyboard-arrow-up" data-name="Icon material-keyboard-arrow-up" d="M11.129,23.188l6.93-6.915,6.93,6.915,2.129-2.129L18.059,12,9,21.059Z" transform="translate(234 598.813)" fill="#fff"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

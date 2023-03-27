@@ -1,0 +1,56 @@
+uuid: c1bbc20a-83db-4a3b-845f-0a53f598f4c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.capa
+    - field.field.block_content.capa.field_imagen
+    - field.field.block_content.capa.field_link
+    - field.field.block_content.capa.field_titulo
+  module:
+    - link
+    - media_library
+id: block_content.capa.default
+targetEntityType: block_content
+bundle: capa
+mode: default
+content:
+  field_imagen:
+    type: media_library_widget
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_titulo:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

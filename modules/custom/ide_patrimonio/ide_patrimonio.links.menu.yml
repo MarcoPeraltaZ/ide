@@ -1,0 +1,6 @@
+ide_patrimonio.settings_form:
+  title: IDE Patrimonio
+  description: Configurar IDE Patrimonio
+  parent: system.admin_config_system
+  route_name: ide_patrimonio.settings_form
+  weight: 10

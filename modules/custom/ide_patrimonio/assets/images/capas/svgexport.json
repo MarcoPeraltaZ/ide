@@ -1,0 +1,124 @@
+[
+  {
+    "input" : ["ic_biblioteca_nac.svg"],
+    "output": [ ["ic_biblioteca_nac_540.png", "168:"] ]
+  },{
+  "input" : ["ic_biblioteca_nac.svg"],
+  "output": [ ["ic_biblioteca_nac.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_elementos_inventario.svg"],
+    "output": [ ["ic_elementos_inventario_540.png", "168:"] ]
+  },{
+  "input" : ["ic_elementos_inventario.svg"],
+  "output": [ ["ic_elementos_inventario.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_encuentro_culturas.svg"],
+    "output": [ ["ic_encuentro_culturas_540.png", "168:"] ]
+  },{
+  "input" : ["ic_encuentro_culturas.svg"],
+  "output": [ ["ic_encuentro_culturas.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_iglesias_escuela_chilota.svg"],
+    "output": [ ["ic_iglesias_escuela_chilota_540.png", "168:"] ]
+  },{
+  "input" : ["ic_iglesias_escuela_chilota.svg"],
+  "output": [ ["ic_iglesias_escuela_chilota.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_lineas_sitio_patrimonios.svg"],
+    "output": [ ["ic_lineas_sitio_patrimonios_540.png", "168:"] ]
+  },{
+  "input" : ["ic_lineas_sitio_patrimonios.svg"],
+  "output": [ ["ic_lineas_sitio_patrimonios.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_monumento_historico.svg"],
+    "output": [ ["ic_monumento_historico_540.png", "168:"] ]
+  },{
+  "input" : ["ic_monumento_historico.svg"],
+  "output": [ ["ic_monumento_historico.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_patrimonio_mundial.svg"],
+    "output": [ ["ic_patrimonio_mundial_540.png", "168:"] ]
+  },{
+  "input" : ["ic_patrimonio_mundial.svg"],
+  "output": [ ["ic_patrimonio_mundial.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_registro_museos_chile.svg"],
+    "output": [ ["ic_registro_museos_chile_540.png", "168:"] ]
+  },{
+  "input" : ["ic_registro_museos_chile.svg"],
+  "output": [ ["ic_registro_museos_chile.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_sello_artesania.svg"],
+    "output": [ ["ic_sello_artesania_540.png", "168:"] ]
+  },{
+  "input" : ["ic_sello_artesania.svg"],
+  "output": [ ["ic_sello_artesania.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_sist_nac_archivos.svg"],
+    "output": [ ["ic_sist_nac_archivos_540.png", "168:"] ]
+  },{
+  "input" : ["ic_sist_nac_archivos.svg"],
+  "output": [ ["ic_sist_nac_archivos.png", ":60"] ]
+}
+,
+
+  {
+    "input" : ["ic_tesoros_humanos.svg"],
+    "output": [ ["ic_tesoros_humanos_540.png", "168:"] ]
+  },{
+  "input" : ["ic_tesoros_humanos.svg"],
+  "output": [ ["ic_tesoros_humanos.png", ":60"] ]
+},
+
+  {
+    "input" : ["ic_poligono_patrimonio_mundial.svg"],
+    "output": [ ["ic_poligono_patrimonio_mundial_540.png", "168:"] ]
+  },{
+  "input" : ["ic_poligono_patrimonio_mundial.svg"],
+  "output": [ ["ic_poligono_patrimonio_mundial.png", ":60"] ]
+}
+,
+
+  {
+    "input" : ["ic_poligono_monumento_historico.svg"],
+    "output": [ ["ic_poligono_monumento_historico_540.png", "168:"] ]
+  },{
+  "input" : ["ic_poligono_monumento_historico.svg"],
+  "output": [ ["ic_poligono_monumento_historico.png", ":60"] ]
+},
+  {
+    "input" : ["ic_santuarios_de_la_naturaleza.svg"],
+    "output": [ ["ic_santuarios_de_la_naturaleza_540.png", "168:"] ]
+  },
+  {
+    "input" : ["ic_santuarios_de_la_naturaleza.svg"],
+    "output": [ ["ic_santuarios_de_la_naturaleza.png", ":60"] ]
+  },
+
+  {
+    "input" : ["ic_zona_tipica.svg"],
+    "output": [ ["ic_zona_tipica_540.png", "168:"] ]
+  },
+  {
+    "input" : ["ic_zona_tipica.svg"],
+    "output": [ ["ic_zona_tipica.png", ":60"] ]
+  }
+]

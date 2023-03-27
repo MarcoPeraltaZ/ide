@@ -1,0 +1,26 @@
+/* Breadcrums */
+.breadcrumb-item {
+  color: black;
+}
+
+.breadcrumb-item:last-child {
+  font-weight: bold;
+}
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.3px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: black;
+  content: " | ";
+  padding-right: 0.3px;
+  font-weight: normal;
+}
+
+.breadcrumb {
+  background: white;
+  font-size: 10pt;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  padding-left: 0;
+}

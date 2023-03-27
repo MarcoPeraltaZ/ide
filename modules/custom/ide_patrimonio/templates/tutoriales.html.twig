@@ -1,0 +1,20 @@
+{{ attach_library('ide_patrimonio/ide_patrimonio') }}
+<div class="container-fluid bg-ide" id="tutoriales">
+  <div class="container pb-80">
+    <div class="ide-iframe-container-title">
+      <h2 class="title-ide color-black">Tutoriales</h2>
+    </div>
+    {% for tutorial in tutoriales %}
+      <div class="card mt-30" style="max-width: 399px;">
+        <iframe width="560" height="315" class="card-img-top" src="{{ tutorial.field_tutorial.entity.field_media_oembed_video.value |replace({'watch?v=': "embed/"})  }}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+        <div class="card-body">
+          <h5 class="card-title font-s24 font-wb">{{ tutorial.field_tutorial_titulo.value }}</h5>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

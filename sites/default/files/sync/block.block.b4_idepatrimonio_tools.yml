@@ -1,0 +1,27 @@
+uuid: 6bab0c0f-371f-4e73-8a8a-ab3dd7ddc33c
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - b4_idepatrimonio
+_core:
+  default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
+id: b4_idepatrimonio_tools
+theme: b4_idepatrimonio
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Herramientas
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

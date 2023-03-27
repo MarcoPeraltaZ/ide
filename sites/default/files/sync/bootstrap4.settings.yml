@@ -1,0 +1,23 @@
+b4_body_schema: none
+b4_body_bg_schema: none
+b4_navbar_schema: dark
+b4_navbar_bg_schema: dark
+b4_footer_schema: dark
+b4_footer_bg_schema: secondary
+b4_top_container: container
+subtheme_folder: themes/custom
+subtheme_name: 'B4 idepatrimonio'
+subtheme_machine_name: b4_idepatrimonio
+_core:
+  default_config_hash: KSNPviNI7ZQYoUp7GU-1xLaUDIGxJk-LTrhGAE0QJ8A
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://Grupo 14340_0.png'
+favicon:
+  use_default: 1
+langcode: es

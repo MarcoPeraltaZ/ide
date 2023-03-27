@@ -1,0 +1,41 @@
+{{ attach_library('ide_patrimonio/ide_patrimonio') }}
+<div class="container-fluid bg-ide">
+  <div class="container">
+    <div class="ide-iframe-container-title">
+      <h2 class="title-ide color-black">Visor Territorial</h2>
+    </div>
+    <div class="text-center mt-30">
+      <div class="ide-iframe-container">
+        <iframe height="800"
+                name="iframe-field_iframe"
+                id="iframe-field_iframe"
+                title=""
+                allow="autoplay,camera,microphone,payment,accelerometer,geolocation,encrypted-media,gyroscope"
+                src="{{ visor_url }}">
+        </iframe>
+      </div>
+      <img src="/{{ module_path }}/assets/images/simbologia.png"
+           alt="iframe-visor-territorial-leyenda" class="w-100 mt-30 mb-80">
+    </div>
+  </div>
+</div>
+<div class="d-none container-fluid bg-ide mt-46">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-auto font-s24 font-wb mt-46 ">Tutorial de ayuda</div>
+    </div>
+    <div class="row justify-content-md-center ">
+      <div class="col-md-auto mt-46 mb-80">
+        <div class="card">
+          <div class="card-body p-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/I5b1NVmnZmo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

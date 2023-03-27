@@ -1,0 +1,17 @@
+<?php
+const HOME = 'Inicio';
+function b4_idepatrimonio_preprocess_menu(&$variables, $hook) {
+  if ($hook === 'menu__main' || $hook === 'menu') {
+    // Get the current path.
+    $current_path = \Drupal::request()->getRequestUri();
+    $items = $variables['items'];
+    foreach ($items as $key => $item) {
+      // If path is current_path, set active to li.
+      if (empty($item['below']) && $item['title'] === HOME && $item['url']->toString() === $current_path) {
+        $item['in_active_trail'] = true;
+        // Add active link.
+        $variables['items'][$key]['attributes']['class'] = 'active';
+      }
+    }
+  }
+}

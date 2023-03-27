@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.695" height="42.696" viewBox="0 0 42.695 42.696">
+  <g id="ic_sist_nac_archivos" transform="translate(-29.196 -429.052)">
+    <g id="Grupo_12" data-name="Grupo 12">
+      <path id="Trazado_21" data-name="Trazado 21" d="M50.544,471.748A21.348,21.348,0,1,0,29.2,450.4a21.348,21.348,0,0,0,21.348,21.348" fill="#a7e038"/>
+    </g>
+    <path id="Trazado_22" data-name="Trazado 22" d="M63.354,455.533H61.56V443.556h-12.4l-3.62-2.476H43.807v-1.741h4.376l3.619,2.476H63.354ZM60.3,458.5H58.538V446.52H46.1l-3.619-2.476h-1.7V442.3H45.13l3.62,2.476H60.3ZM57.28,461.46H37.732V445.267h4.376l3.62,2.474H57.28Zm7.333-20.868h-12.4l-3.62-2.474H42.549v2.962H39.528v2.964H36.474v18.638H58.538v-2.964H61.56v-2.964h3.053Z" fill="#a7e038"/>
+    <path id="Trazado_23" data-name="Trazado 23" d="M57.279,461.46H37.733V445.267h4.375l3.62,2.474H57.279Z" fill="#fff"/>
+    <path id="Trazado_24" data-name="Trazado 24" d="M60.3,458.5H58.538V446.519H46.106l-3.62-2.474h-1.7V442.3h4.344l3.62,2.474H60.3Z" fill="#fff"/>
+    <path id="Trazado_25" data-name="Trazado 25" d="M63.354,441.814v13.719H61.56V443.556h-12.4l-3.62-2.474H43.808V439.34h4.375l3.62,2.474Z" fill="#fff"/>
+    <rect id="Rectángulo_6" data-name="Rectángulo 6" width="2.106" height="4.464" transform="translate(43.436 453.45)" fill="#a7e038"/>
+    <rect id="Rectángulo_7" data-name="Rectángulo 7" width="2.106" height="4.464" transform="translate(49.471 453.45)" fill="#a7e038"/>
+    <rect id="Rectángulo_8" data-name="Rectángulo 8" width="9.874" height="1.093" transform="translate(42.569 458.421)" fill="#a7e038"/>
+    <path id="Trazado_26" data-name="Trazado 26" d="M47.506,449.82l-4.887,2.719v.6h9.774v-.6Z" fill="#a7e038"/>
+    <path id="Trazado_27" data-name="Trazado 27" d="M48.223,455.071s-.373-.274-.373-.454a.754.754,0,0,1,.183-.479c.086-.074.142-.123.142-.173,0-.111-.245-.145-.607-.148h-.062c-.368,0-.668.037-.668.148,0,.05.056.1.142.173a.754.754,0,0,1,.183.479c0,.18-.373.454-.373.454a1.3,1.3,0,0,0-.55,1.031,2.379,2.379,0,0,0,.962,1.621h.609a2.379,2.379,0,0,0,.961-1.621A1.292,1.292,0,0,0,48.223,455.071Z" fill="#a7e038"/>
+  </g>
+</svg>

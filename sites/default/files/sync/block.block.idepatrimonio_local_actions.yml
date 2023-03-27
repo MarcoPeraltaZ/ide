@@ -1,0 +1,20 @@
+uuid: ac46fed0-7a5d-4a4c-9cdb-8b615a5eb9b3
+langcode: es
+status: true
+dependencies:
+  theme:
+    - idepatrimonio
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: idepatrimonio_local_actions
+theme: idepatrimonio
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

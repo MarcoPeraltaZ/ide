@@ -1,0 +1,33 @@
+uuid: 4e5c857c-5ef0-4f6c-8cab-24b74cd8f5b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  layout_builder__layout: true

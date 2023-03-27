@@ -1,0 +1,25 @@
+uuid: 66e0ae14-1553-4cff-8071-6bdf70c7ca6b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b4_idepatrimonio
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: b4_idepatrimonio_branding
+theme: b4_idepatrimonio
+region: nav_branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: Logo
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

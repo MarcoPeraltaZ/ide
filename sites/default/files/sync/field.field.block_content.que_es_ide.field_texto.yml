@@ -1,0 +1,19 @@
+uuid: 5e7b5614-54e1-4594-be8f-04814db2d2f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.que_es_ide
+    - field.storage.block_content.field_texto
+id: block_content.que_es_ide.field_texto
+field_name: field_texto
+entity_type: block_content
+bundle: que_es_ide
+label: texto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

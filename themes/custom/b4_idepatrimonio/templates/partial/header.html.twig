@@ -1,0 +1,69 @@
+<header>
+  {{ page.header }}
+  {% if page.nav_branding %}
+    <nav class="{{ nav_classes }}">
+      <div class="container row mx-auto">
+        <div class="col-auto p-0">
+          {{ page.nav_branding }}
+        </div>
+        <div class="col-aut col-menu-btn">
+          <div class=" p-0 text-right">
+            <button class="navbar-toggler collapsed  p-0" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContentSm" aria-controls="navbarSupportedContentSm"
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="9 5 55 55">
+                <defs>
+                  <filter id="Elipse_395" x="0" y="0" width="71" height="71" filterUnits="userSpaceOnUse">
+                    <feOffset dy="3" input="SourceAlpha"/>
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feFlood flood-opacity="0.161"/>
+                    <feComposite operator="in" in2="blur"/>
+                    <feComposite in="SourceGraphic"/>
+                  </filter>
+                </defs>
+                <g id="Grupo_14501" data-name="Grupo 14501" transform="translate(-327 -58)">
+                  <g id="Grupo_12808" data-name="Grupo 12808">
+                    <g transform="matrix(1, 0, 0, 1, 327, 58)" filter="url(#Elipse_395)">
+                      <circle id="Elipse_395-2" data-name="Elipse 395" cx="26.5" cy="26.5" r="26.5" transform="translate(9 6)"/>
+                    </g>
+                    <g id="Grupo_12730" data-name="Grupo 12730">
+                      <line id="Línea_130" data-name="Línea 130" x2="20" transform="translate(352.5 84.5)" fill="none" stroke="#fff" stroke-width="2"/>
+                      <line id="Línea_131" data-name="Línea 131" x2="20" transform="translate(352.5 89.5)" fill="none" stroke="#fff" stroke-width="2"/>
+                      <line id="Línea_132" data-name="Línea 132" x2="20" transform="translate(352.5 95.5)" fill="none" stroke="#fff" stroke-width="2"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  {% endif %}
+  {% if page.nav_main or page.nav_additional %}
+    <nav class="{{ nav_classes }} navbar-ide d-lg-none" id="nav-bar-sm">
+      <div class="container row mx-auto" id="navbarSupportedContentSmContainer">
+        <div class="collapse navbar-collapse col-12 col-md-auto p-0 justify-content-center bg-black " id="navbarSupportedContentSm">
+          {{ page.nav_main }}
+          {{ page.nav_additional }}
+        </div>
+      </div>
+    </nav>
+    <nav class="{{ nav_classes }} navbar-ide bg-black d-none d-lg-block">
+      <div class="container row mx-auto">
+        <div class="col-3 col-md-auto p-0 text-right">
+          <button class="navbar-toggler collapsed btn-circle" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContentLg" aria-controls="navbarSupportedContentLg"
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse col-12 col-md-auto p-0 justify-content-center" id="navbarSupportedContentLg">
+          {{ page.nav_main }}
+          {{ page.nav_additional }}
+        </div>
+      </div>
+    </nav>
+  {% endif %}
+</header>

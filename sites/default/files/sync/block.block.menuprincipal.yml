@@ -1,0 +1,25 @@
+uuid: 22c79d62-4471-4c46-b016-67efee2b2da2
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - b4_idepatrimonio
+id: menuprincipal
+theme: b4_idepatrimonio
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Menú
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 5d712d5a-ee93-454a-b5cc-539fc0505044
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_del_patrimonio
+    - node.type.patrimonio
+id: node.patrimonio.field_nombre_del_patrimonio
+field_name: field_nombre_del_patrimonio
+entity_type: node
+bundle: patrimonio
+label: 'Nombre del patrimonio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

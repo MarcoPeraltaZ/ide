@@ -1,0 +1,6 @@
+name: ide_patrimonio
+type: module
+description: IDE Patrimonio Module.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

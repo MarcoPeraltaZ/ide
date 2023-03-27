@@ -1,0 +1,49 @@
+uuid: 64b9d518-05f4-4bb7-8420-61fb5ef06954
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zW8dEKuN_hbYbIx-q05dK7KEUuXcAjFV4-9MKe9EOiw
+id: default
+label: Default
+options:
+  animation: slide
+  animationSpeed: 600
+  direction: horizontal
+  slideshow: false
+  easing: swing
+  smoothHeight: false
+  reverse: false
+  slideshowSpeed: 7000
+  animationLoop: true
+  randomize: false
+  startAt: 0
+  itemWidth: 338
+  itemMargin: 20
+  minItems: 0
+  maxItems: 0
+  move: 0
+  directionNav: true
+  controlNav: '0'
+  thumbCaptions: false
+  thumbCaptionsBoth: false
+  keyboard: true
+  multipleKeyboard: false
+  mousewheel: false
+  touch: true
+  prevText: ''
+  nextText: ''
+  namespace: flex-
+  selector: '.slides > li'
+  sync: ''
+  asNavFor: ''
+  initDelay: 0
+  useCSS: true
+  video: false
+  pausePlay: false
+  pauseText: Pause
+  playText: Play
+  pauseOnAction: false
+  pauseOnHover: false
+  controlsContainer: .flex-control-nav-container
+  manualControls: ''

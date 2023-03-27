@@ -1,0 +1,22 @@
+uuid: 41efa4b7-dd21-4652-b1d3-358d1febb051
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b4_idepatrimonio
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: b4_idepatrimonio_content
+theme: b4_idepatrimonio
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  provider: system
+  label_display: '0'
+visibility: {  }

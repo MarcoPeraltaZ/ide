@@ -1,0 +1,28 @@
+uuid: bbbcf4fd-fc0b-494e-aa79-cf46ff16f660
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.capa
+    - field.storage.block_content.field_imagen
+    - media.type.image
+id: block_content.capa.field_imagen
+field_name: field_imagen
+entity_type: block_content
+bundle: capa
+label: imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

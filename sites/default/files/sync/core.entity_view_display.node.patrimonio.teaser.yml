@@ -1,0 +1,23 @@
+uuid: 5d6d52bf-4232-4140-a2c0-52509e7f214f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.patrimonio.field_nombre_del_patrimonio
+    - node.type.patrimonio
+  module:
+    - user
+id: node.patrimonio.teaser
+targetEntityType: node
+bundle: patrimonio
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_nombre_del_patrimonio: true
+  langcode: true

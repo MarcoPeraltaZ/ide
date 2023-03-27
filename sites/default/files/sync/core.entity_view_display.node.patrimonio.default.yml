@@ -1,0 +1,29 @@
+uuid: 67ca6461-7c6c-439d-81cf-99282d34d8f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.patrimonio.field_nombre_del_patrimonio
+    - node.type.patrimonio
+  module:
+    - user
+id: node.patrimonio.default
+targetEntityType: node
+bundle: patrimonio
+mode: default
+content:
+  field_nombre_del_patrimonio:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

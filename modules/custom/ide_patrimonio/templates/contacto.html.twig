@@ -1,0 +1,17 @@
+{{ attach_library('ide_patrimonio/ide_patrimonio') }}
+<div class="container-fluid bg-ide">
+  <div class="container ">
+    <div class="row justify-content-between">
+      <div class="col-md-auto col-2 mt-26">
+        <h2 class="title-ide color-black">Contacto</h2>
+      </div>
+      <div class="col-md-auto col-2 ">
+        <img src="/{{ module_path }}/assets/images/contacto_image.png" id="image-contacto">
+      </div>
+    </div>
+    <div class="mt-58 pb-5">
+        {{ drupal_entity('webform', 'contact') }}
+    </div>
+  </div>
+</div>
+

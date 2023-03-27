@@ -1,0 +1,102 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for ide_patrimonio module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+function ide_patrimonio_theme(){
+
+  $module_handler = \Drupal::service('module_handler');
+  $module_path = $module_handler->getModule('ide_patrimonio')->getPath();
+
+  return [
+    'acerca-de' => [
+      'variables' => [
+        'module_path' => $module_path
+      ],
+    ],
+    'block-acerca-de' => [
+      'variables' => [
+        'module_path' => $module_path
+      ],
+    ],
+    'block-banner' => [
+      'variables' => [
+        'module_path' => $module_path
+      ],
+    ],
+    'block-herramientas-ide' => [
+      'variables' => [
+        'module_path' => $module_path
+      ],
+    ],
+    'block-slider' => [
+      'variables' => [
+        'module_path' => $module_path,
+        'capas' => NULL
+      ],
+    ],
+    'patrimonios-index' => [
+      'variables' => [
+        'module_path' => $module_path,
+        'capas' => NULL,
+        'patrimonios' => NULL,
+        'regiones' => NULL,
+        'comunas' => NULL,
+        'pager' => NULL,
+        'totalItems' => NULL,
+        'regionesJson' => NULL,
+        'noFilters' => NULL,
+        'filter' => NULL,
+        'capasEstadisticas' => NULL,
+        'showVisorSliderEstadisticas' => NULL,
+        'urlIframeVisor' => NULL
+      ],
+    ],
+    'patrimonio-show' => [
+      'variables' => [
+        'patrimonio' => NULL,
+        'module_path' => $module_path
+      ],
+    ],
+    'visor-estadistico' => [
+      'variables' => [
+        'module_path' => $module_path,
+        'visor_url' => NULL
+      ],
+    ],
+    'visor-territorial' => [
+      'variables' => [
+        'module_path' => $module_path,
+        'visor_url' => NULL
+      ],
+    ],
+    'visor-cerca' => [
+      'variables' => [
+        'module_path' => $module_path,
+        'visor_url' => NULL
+      ],
+    ],
+    'catalogo' => [
+      'variables' => [
+        'module_path' => $module_path
+      ],
+    ],
+    'contacto' => [
+      'variables' => [
+        'module_path' => $module_path
+      ],
+    ],
+    'tutoriales' => [
+      'variables' => [
+        'module_path' => $module_path,
+        'tutoriales' => NULL
+      ],
+    ]
+  ];
+}

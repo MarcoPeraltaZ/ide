@@ -1,0 +1,8 @@
+uuid: 3178f93c-edae-42ab-9b81-d72c60cd7eaa
+langcode: es
+status: true
+dependencies: {  }
+id: capa
+label: Capa
+revision: 0
+description: 'Capas del slider de la pantalla principal'

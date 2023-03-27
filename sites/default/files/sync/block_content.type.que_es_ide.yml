@@ -1,0 +1,8 @@
+uuid: 5c3d6fe4-9328-40b8-98d1-438bed7db034
+langcode: es
+status: true
+dependencies: {  }
+id: que_es_ide
+label: 'Que es IDE'
+revision: 0
+description: 'Que es IDE'

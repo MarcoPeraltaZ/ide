@@ -1,0 +1,19 @@
+uuid: cfa86c5a-fc8c-4cf5-aa88-116948b27cdb
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.capa
+    - field.storage.block_content.field_titulo
+id: block_content.capa.field_titulo
+field_name: field_titulo
+entity_type: block_content
+bundle: capa
+label: titulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

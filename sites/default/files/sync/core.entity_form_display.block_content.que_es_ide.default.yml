@@ -1,0 +1,30 @@
+uuid: b884c6cc-8e47-4ff6-985a-baa470eb3f6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.que_es_ide
+    - field.field.block_content.que_es_ide.field_texto
+id: block_content.que_es_ide.default
+targetEntityType: block_content
+bundle: que_es_ide
+mode: default
+content:
+  field_texto:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,114 @@
+/* Buttons */
+.btn {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+}
+
+.btn-ide-patrimonio {
+  border-radius: 2rem;
+  color: #4C4C4C;
+  background-color: #dddddd;
+  border-color: #dddddd;
+}
+
+.btn-ide-patrimonio:hover {
+  color: white;
+  background-color: #aeacac;
+  border-color: #aeacac;
+}
+.btn-ide-patrimonio:focus, .btn-ide-patrimonio.focus {
+  color: white;
+  background-color: #aeacac;
+  border-color: #aeacac;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.btn-ide-patrimonio:not(:disabled):not(.disabled):active:focus, .btn-ide-patrimonio:not(:disabled):not(.disabled).active:focus, .show > .btn-ide-patrimonio.dropdown-toggle:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.btn-ide-patrimonio a {
+  color: #4C4C4C;
+}
+.btn-ide-patrimonio a:hover {
+  color: #4C4C4C;
+  text-decoration: none;
+}
+
+.btn-ide-patrimonio-secondary {
+  border-radius: 2rem;
+  color: white;
+  background-color: #A20952;
+  border-color: #A20952;
+}
+
+.btn-ide-patrimonio-secondary:hover {
+  color: white;
+  background-color: #620732;
+  border-color: #620732;
+}
+.btn-ide-patrimonio-secondary:focus, .btn-ide-patrimonio-secondary.focus {
+  color: white;
+  background-color: #620732;
+  border-color: #620732;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.btn-ide-patrimonio-secondary:not(:disabled):not(.disabled):active:focus, .btn-ide-patrimonio-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-ide-patrimonio-secondary.dropdown-toggle:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.btn-ide-patrimonio-secondary a {
+  color: white;
+}
+.btn-ide-patrimonio-secondary a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-transparent {
+  a{
+    color: #707072;
+  }
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-navigation {
+  a{
+    color: white;
+  }
+  background-color: #b8b8b8;
+  border-color: #b8b8b8;
+}
+.btn-dark {
+  a{
+    color: white;
+  }
+  background-color: black !important;
+  border-color: black !important;
+}
+
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+.button-contact-primary {
+  background-color: black !important;
+  border-color: black !important;
+  font-size: 18px;
+  color: #FEFEFE;
+}
+
+
+.button-ide-patrimonio{
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.btn-rectangle {
+  border-radius: 0 !important;
+}

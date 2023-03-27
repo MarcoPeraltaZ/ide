@@ -1,0 +1,22 @@
+uuid: b879f2c7-4cdb-46fb-a840-2a27041e9ca0
+langcode: es
+status: true
+dependencies:
+  theme:
+    - b4_idepatrimonio
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: b4_idepatrimonio_local_tasks
+theme: b4_idepatrimonio
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

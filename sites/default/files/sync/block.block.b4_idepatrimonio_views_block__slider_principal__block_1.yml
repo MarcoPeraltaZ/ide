@@ -1,0 +1,24 @@
+uuid: e994cd74-2727-48b7-864c-e9288f176e24
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.slider_principal_
+  module:
+    - views
+  theme:
+    - b4_idepatrimonio
+id: b4_idepatrimonio_views_block__slider_principal__block_1
+theme: b4_idepatrimonio
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:slider_principal_-block_1'
+settings:
+  id: 'views_block:slider_principal_-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

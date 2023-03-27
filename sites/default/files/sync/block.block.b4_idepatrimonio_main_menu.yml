@@ -1,0 +1,27 @@
+uuid: d2fe67ce-d6fb-4784-8182-02b683123ea7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - b4_idepatrimonio
+_core:
+  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
+id: b4_idepatrimonio_main_menu
+theme: b4_idepatrimonio
+region: nav_main
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Menú Principal'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

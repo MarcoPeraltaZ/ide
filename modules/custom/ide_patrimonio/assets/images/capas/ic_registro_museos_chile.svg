@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.695" height="42.696" viewBox="0 0 42.695 42.696">
+  <g id="ic_registro_museos_chile" transform="translate(-29.196 -111.887)">
+    <path id="Trazado_18" data-name="Trazado 18" d="M50.544,154.583A21.348,21.348,0,1,0,29.2,133.235a21.348,21.348,0,0,0,21.348,21.348" fill="#8fbf21"/>
+    <rect id="Rectángulo_3" data-name="Rectángulo 3" width="5.901" height="12.505" transform="translate(39.602 128.472)" fill="#fff"/>
+    <rect id="Rectángulo_4" data-name="Rectángulo 4" width="5.901" height="12.505" transform="translate(56.507 128.472)" fill="#fff"/>
+    <rect id="Rectángulo_5" data-name="Rectángulo 5" width="27.009" height="2.991" transform="translate(37.5 141.831)" fill="#fff"/>
+    <path id="Trazado_19" data-name="Trazado 19" d="M51,118.305l-13.689,7.618v1.688H64.694v-1.688Z" fill="#fff"/>
+    <path id="Trazado_20" data-name="Trazado 20" d="M53.012,133.015s-1.046-.769-1.046-1.271a2.117,2.117,0,0,1,.512-1.342c.243-.208.4-.346.4-.486,0-.311-.687-.4-1.7-.414h-.171c-1.031.008-1.873.1-1.873.414,0,.14.156.278.4.486a2.117,2.117,0,0,1,.512,1.342c0,.5-1.046,1.271-1.046,1.271a3.625,3.625,0,0,0-1.539,2.887c0,2.579,2.694,4.542,2.694,4.542h1.7s2.694-1.963,2.694-4.542A3.625,3.625,0,0,0,53.012,133.015Z" fill="#fff"/>
+  </g>
+</svg>

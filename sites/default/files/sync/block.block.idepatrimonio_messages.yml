@@ -1,0 +1,22 @@
+uuid: c95b7366-979b-4ddf-81bc-04f26d79e0d4
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - idepatrimonio
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: idepatrimonio_messages
+theme: idepatrimonio
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

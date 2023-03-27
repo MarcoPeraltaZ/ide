@@ -1,0 +1,22 @@
+uuid: 93d2d8b5-3637-4f04-a6d3-b4f33bd34d5e
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - idepatrimonio
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: idepatrimonio_help
+theme: idepatrimonio
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  provider: help
+  label_display: '0'
+visibility: {  }

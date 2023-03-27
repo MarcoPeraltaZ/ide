@@ -1,0 +1,22 @@
+uuid: 16cda4b2-47d8-45f5-9c2b-62df53abf759
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - b4_idepatrimonio
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: b4_idepatrimonio_help
+theme: b4_idepatrimonio
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  provider: help
+  label_display: '0'
+visibility: {  }

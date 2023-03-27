@@ -1,0 +1,23 @@
+uuid: d1f6129f-1da6-46cc-8244-9049fa6e33c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.capa
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.capa.field_link
+field_name: field_link
+entity_type: block_content
+bundle: capa
+label: link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

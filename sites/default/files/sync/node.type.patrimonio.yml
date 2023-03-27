@@ -1,0 +1,17 @@
+uuid: 9f9056ec-5524-497f-9182-21eebfedbeaf
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Patrimonio
+type: patrimonio
+description: 'Patrimonio cultural en Chile'
+help: ''
+new_revision: true
+preview_mode: 2
+display_submitted: false

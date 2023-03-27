@@ -1,0 +1,31 @@
+uuid: 76ef559b-d685-412d-8380-746578f4d94a
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.basic.body
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
+id: block_content.basic.full
+targetEntityType: block_content
+bundle: basic
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

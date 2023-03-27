@@ -1,0 +1,10 @@
+uuid: 2cafa7ab-310a-418c-bc80-2764908486b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.bare
+label: Bare
+targetEntityType: media
+cache: true

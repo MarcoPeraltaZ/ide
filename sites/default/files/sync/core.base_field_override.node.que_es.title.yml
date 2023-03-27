@@ -1,0 +1,18 @@
+uuid: dc0b3c30-8d60-4753-941c-0c08d3d8ff5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.que_es
+id: node.que_es.title
+field_name: title
+entity_type: node
+bundle: que_es
+label: Imagen
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

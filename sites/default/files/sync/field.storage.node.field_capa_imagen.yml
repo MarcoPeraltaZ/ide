@@ -1,0 +1,20 @@
+uuid: 723b26f4-350b-4994-b799-68b16f65d3cd
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_capa_imagen
+field_name: field_capa_imagen
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

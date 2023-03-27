@@ -1,0 +1,30 @@
+uuid: 7a821cda-6b59-42cf-9afa-bf3fc3709e1c
+langcode: es
+status: false
+dependencies:
+  config:
+    - block_content.type.que_es_ide
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.que_es_ide.field_texto
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.que_es_ide.full
+targetEntityType: block_content
+bundle: que_es_ide
+mode: full
+content:
+  field_texto:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  field_que_es_ide_imagen: true
+  langcode: true
+  layout_builder__layout: true

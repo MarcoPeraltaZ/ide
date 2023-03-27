@@ -1,0 +1,113 @@
+ide_patrimonio.about:
+  path: '/quienes-somos'
+  defaults:
+    _title: 'Quienes somos'
+    _controller: '\Drupal\ide_patrimonio\Controller\IdePatrimonioController::acercaDe'
+  requirements:
+    _permission: 'access content'
+
+ide_patrimonio.patrimonios:
+  path: '/patrimonios'
+  defaults:
+    _title: 'Patrimonios'
+    _controller: '\Drupal\ide_patrimonio\Controller\PatrimonioController::index'
+  requirements:
+    _permission: 'access content'
+
+ide_patrimonio.patrimonio.show:
+  path: '/patrimonio/{patrimonio}'
+  defaults:
+    _controller: '\Drupal\ide_patrimonio\Controller\PatrimonioController::showPatrimonio'
+    _title: 'IDE Patrimonio'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      patrimonio:
+        type: int
+
+ide_patrimonio.visor-estadistico:
+  path: '/herramientas/visor-estadistico'
+  defaults:
+    _title: 'Visor Estadístico'
+    _controller: '\Drupal\ide_patrimonio\Controller\IdePatrimonioController::visorEstadistico'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+ide_patrimonio.visor-territorial:
+  path: '/herramientas/visor-territorial'
+  defaults:
+    _title: 'Visor Territorial'
+    _controller: '\Drupal\ide_patrimonio\Controller\IdePatrimonioController::visorTerritorial'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+ide_patrimonio.visor-cerca:
+  path: '/herramientas/visor-cerca'
+  defaults:
+    _title: 'Visor Cerca de Mí'
+    _controller: '\Drupal\ide_patrimonio\Controller\IdePatrimonioController::visorCerca'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+ide_patrimonio.catalogo:
+  path: '/herramientas/catalogo'
+  defaults:
+    _title: 'Catálogo de Metadatos y Descarga de capas del Patrimonio Cultural en Chile'
+    _controller: '\Drupal\ide_patrimonio\Controller\IdePatrimonioController::catalogo'
+  requirements:
+    _permission: 'access content'
+
+ide_patrimonio.contact:
+  path: '/contacto'
+  defaults:
+    _title: 'Contacto'
+    _controller: '\Drupal\ide_patrimonio\Controller\IdePatrimonioController::contacto'
+  requirements:
+    _permission: 'access content'
+
+ide_patrimonio.tutoriales:
+  path: '/tutoriales'
+  defaults:
+    _title: 'Tutoriales'
+    _controller: '\Drupal\ide_patrimonio\Controller\IdePatrimonioController::tutoriales'
+  requirements:
+    _permission: 'access content'
+
+ide_patrimonio.api.patrimonios-iniciales:
+  path: '/api/patrimonios/initial'
+  defaults:
+    _title: 'Patrimonios Iniciales'
+    _controller: '\Drupal\ide_patrimonio\Controller\ApiController::getInitialPatrimonios'
+  requirements:
+    _permission: 'access content'
+
+ide_patrimonio.api.patrimonios:
+  path: '/api/patrimonios'
+  defaults:
+    _title: 'Patrimonios Iniciales'
+    _controller: '\Drupal\ide_patrimonio\Controller\ApiController::getPatrimoniosWithFilter'
+  requirements:
+    _permission: 'access content'
+
+ide_patrimonio.api.recion-comuna:
+  path: '/api/region-comuna'
+  defaults:
+    _title: 'Patrimonios Iniciales'
+    _controller: '\Drupal\ide_patrimonio\Controller\ApiController::getRegionComuna'
+  requirements:
+    _permission: 'access content'
+
+ide_patrimonio.settings_form:
+  path: '/admin/config/system/ide_patrimonio'
+  defaults:
+    _title: 'Configuración IDE Patrimonios'
+    _form: 'Drupal\ide_patrimonio\Form\SettingsForm'
+  requirements:
+    _permission: 'administer ide_patrimonio configuration'

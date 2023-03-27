@@ -1,0 +1,55 @@
+{{ attach_library('ide_patrimonio/ide_patrimonio') }}
+<div class="container-fluid bg-ide mt-46">
+  <div class="container pt-30">
+    <h2 class="title-ide color-black" id="herramientas">
+      Herramientas
+    </h2>
+    <div class="ide-iframe-container mt-70">
+      <iframe height="400" id="iframe-field_iframe" title=""
+              allow="autoplay,camera,microphone,payment,accelerometer,geolocation,encrypted-media,gyroscope"
+              src="https://geoportalcmn.cl/portal/apps/Embed/index.html?webmap=e0e0598e808b435eaa4f9e88bfd1ab42&extent=-74.2095,-42.3267,-71.1772,-40.8664&zoom=false&previewImage=false&scale=false&disable_scroll=true&theme=light"
+              class="w-100">
+      </iframe>
+      <img src="/{{ module_path }}/assets/images/simbologia.png"
+           alt="iframe-visor-territorial-leyenda" class="w-100 mt-20">
+    </div>
+
+    <div class="row mt-50">
+      <div class="col-md-4">
+        <div class="card herramientas-card">
+          <a href="{{ path('ide_patrimonio.visor-cerca') }}">
+            <img src="/{{ module_path }}/assets/images/visor_cerca.png" class="card-img-top herramientas-image gray-image" alt="...">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="{{ path('ide_patrimonio.visor-cerca') }}">Visor Cerca de Mí</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card herramientas-card">
+          <a href="{{ path('ide_patrimonio.visor-territorial') }}">
+            <img src="/{{ module_path }}/assets/images/visor_territorial.png" class="card-img-top herramientas-image gray-image" alt="...">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="{{ path('ide_patrimonio.visor-territorial') }}">Visor Territorial</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card herramientas-card">
+          <a href="{{ path('ide_patrimonio.visor-estadistico') }}">
+            <img src="/{{ module_path }}/assets/images/visor_estadistico.png" class="card-img-top herramientas-image gray-image" alt="...">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="{{ path('ide_patrimonio.visor-estadistico') }}">Visor Estadístico</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12  mt-35 mb-80">
+        <a id="buttonMetadatos" class="btn btn-ide-patrimonio-secondary w-100 btn-rectangle font-wb" href="{{ path('ide_patrimonio.catalogo') }}">Metadatos y Descarga de Capas</a>
+      </div>
+    </div>
+  </div>
+</div>

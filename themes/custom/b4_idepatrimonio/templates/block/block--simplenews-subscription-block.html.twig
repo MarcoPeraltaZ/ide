@@ -1,0 +1,97 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
+%}
+  {{ title_prefix }}
+  {% if label %}
+    <h5 class="newsletter-title">{{ label }}</h5>
+  {% endif %}
+  {{ title_suffix }}
+
+  <p class="newsletter-message ">Quieres estar informado, ingresa tu nombre y correo electrónico</p>
+
+  <form class="simplenews-subscriptions-block-d2e1e102-257b-4a99-b011-2d6dc25c611b simplenews-subscriber-form"
+        data-drupal-selector="simplenews-subscriptions-block-f9c23c23-b1dc-438d-af31-5a337cba5581"
+        action="{{ url('<current>') }}" method="post" id="simplenews-subscriptions-block-d2e1e102-257b-4a99-b011-2d6dc25c611b"
+        accept-charset="UTF-8"
+        data-drupal-form-fields="edit-subscriptions-gtge,edit-subscriptions-newsletter,edit-field-newsletter-name-0-value,edit-mail-0-value,edit-subscribe,edit-unsubscribe">
+
+    <input autocomplete="off" class="form-control" data-drupal-selector="form-5LWDwsMZJ9zRLBO6uZ_CQyFQXoawuMLkM5Y1_At5a-w"
+           name="form_build_id" type="hidden" value="form-5LWDwsMZJ9zRLBO6uZ_CQyFQXoawuMLkM5Y1_At5a-w">
+    <input class="form-control" data-drupal-selector="edit-simplenews-subscriptions-block-d2e1e102-257b-4a99-b011-2d6dc25c611b"
+           name="form_id" type="hidden"
+           value="simplenews_subscriptions_block_d2e1e102-257b-4a99-b011-2d6dc25c611b">
+
+    <input style="display: none" data-drupal-selector="edit-subscriptions-newsletter" aria-describedby="edit-subscriptions--description" type="checkbox"
+           id="edit-subscriptions-newsletter" name="subscriptions[newsletter]" value="newsletter" class="form-checkbox form-control"
+           checked="checked">
+
+    <div class="field--type-simplenews-subscription field--name-subscriptions field--widget-simplenews-subscription-select js-form-wrapper form-wrapper"
+         data-drupal-selector="edit-subscriptions-wrapper" id="edit-subscriptions-wrapper"></div>
+
+    <div class="row no-gutters">
+
+      <div class="row no-gutters" data-drupal-selector="edit-group-newsletter-container">
+        <div class="col-md-3 mt-1 align-self-center p-1" data-drupal-selector="edit-group-newsletter-col">
+              <input aria-required="true"
+                     class="js-text-full text-full form-text required form-control newsletter-form-control" data-drupal-selector="edit-field-newsletter-name-0-value"
+                     id="edit-field-newsletter-name-0-value " maxlength="255" name="field_newsletter_name[0][value]" placeholder="Nombre"
+                     required="required" size="60" type="text" value="">
+        </div>
+        <div class="col-md-4 mt-1 align-self-center p-1" data-drupal-selector="edit-group-newsletter-col-2">
+              <input aria-describedby="edit-mail-0-value--description" aria-required="true"
+                     class="form-email required form-control newsletter-form-control" data-drupal-selector="edit-mail-0-value" id="edit-mail-0-value" maxlength="254" name="mail[0][value]" placeholder="mail@correo.com"
+                     required="required" size="60" type="email"
+                     value="">
+        </div>
+
+        <div class="col-md-5 mt-1">
+          <div class="row no-gutters" data-drupal-selector="edit-actions" id="edit-actions">
+            <div class="col-md-auto p-1">
+              <input
+                data-drupal-selector="edit-subscribe" id="edit-subscribe" name="op" type="submit" value="Suscribirse"
+                class="w-100 button form-submit btn btn-ide-patrimonio newsletter-form-control btn-shadow">
+            </div>
+
+            <div class="col-md-auto p-1">
+              <input data-drupal-selector="edit-unsubscribe" type="submit" id="edit-unsubscribe" name="op" value="Anular suscripción"
+                     class="w-100 button form-submit btn btn-ide-patrimonio newsletter-form-control btn-shadow">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </form>

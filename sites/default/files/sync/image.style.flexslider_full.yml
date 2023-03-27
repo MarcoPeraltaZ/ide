@@ -1,0 +1,22 @@
+uuid: 3f79b9fc-327b-4bee-8d62-b46534531953
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NzoU8g2Q_HdPlk1Mm7KilV1FwnWeMmNt6dRjcCBJXj4
+name: flexslider_full
+label: 'Flexslider Full'
+effects:
+  7c3142f8-ebf5-4cb3-9815-2140c9ef8466:
+    uuid: 7c3142f8-ebf5-4cb3-9815-2140c9ef8466
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 500
+      anchor: center-center
+  7c734596-22fd-4cdf-9116-66b155569d5c:
+    uuid: 7c734596-22fd-4cdf-9116-66b155569d5c
+    id: image_desaturate
+    weight: 2
+    data: {  }

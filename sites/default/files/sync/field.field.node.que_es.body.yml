@@ -1,0 +1,23 @@
+uuid: 99e6f872-cc87-405b-80bb-46f3171dd66f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.que_es
+  module:
+    - text
+id: node.que_es.body
+field_name: body
+entity_type: node
+bundle: que_es
+label: Descripción
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

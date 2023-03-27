@@ -1,0 +1,10 @@
+uuid: 17a89db0-9365-447c-acd6-c9c8030e282c
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: Etiquetas
+vid: tags
+description: 'Utilice etiquetas para agrupar artículos sobre temas similares en categorías.'
+weight: 0

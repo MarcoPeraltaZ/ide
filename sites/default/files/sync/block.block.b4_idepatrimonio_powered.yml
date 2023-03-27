@@ -1,0 +1,22 @@
+uuid: 8d494295-6076-471f-b490-6c8e77865c9d
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - b4_idepatrimonio
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: b4_idepatrimonio_powered
+theme: b4_idepatrimonio
+region: header
+weight: -2
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

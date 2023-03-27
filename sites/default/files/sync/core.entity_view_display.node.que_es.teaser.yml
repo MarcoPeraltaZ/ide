@@ -1,0 +1,33 @@
+uuid: 3fb5cc25-f6ba-45c5-b909-7d5df3156afc
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.que_es.body
+    - field.field.node.que_es.field_image_que_es
+    - node.type.que_es
+  module:
+    - text
+    - user
+id: node.que_es.teaser
+targetEntityType: node
+bundle: que_es
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image_que_es: true
+  langcode: true

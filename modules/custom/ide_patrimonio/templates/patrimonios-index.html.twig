@@ -1,0 +1,215 @@
+{{ attach_library('ide_patrimonio/ide_patrimonio') }}
+{{ attach_library('ide_patrimonio/ide_patrimonio_patrimonios') }}
+<div class="container-fluid bg-ide pt-3">
+  <div class="container pb-5">
+    <h2 class="title-ide color-black">Descubre el Patrimonio Cultural en Chile</h2>
+    <input type="hidden" id="regionesJson" value="{{ regionesJson }}">
+    <form method="get" action="{{ path('ide_patrimonio.patrimonios') }}" class="mt-5">
+      <input type="hidden" id="resultPerPageHidden" name="result-per-page">
+      <div class="row justify-content-md-center">
+        <div class="col-md-12">
+          <div class="input-group">
+            <input id="patrimonio-search-input" name="search-text" type="text" class="form-control text-right" placeholder="Busca un registro patrimonial en Chile" value="{{ filter.searchText }}">
+            <div class="input-group-append">
+              <span class="input-group-text" id="patrimonio-search-input-addon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5">
+        <div class="col-md-4">
+          <select name="region" class="form-control w-100 ide-control" id="region">
+            <option value="">Seleccione una región</option>
+            {% for region,comuna in regiones %}
+              <option value="{{ region }}" {% if filter.region is same as(region) %} selected {% endif %}>{{ region }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-4">
+          <select name="comuna" class="form-control w-100 ide-control" id="comuna">
+            <option value="">Seleccione una comuna</option>
+            {% if filter.region %}
+              {% for region,comunas in regiones %}
+                {% if filter.region is same as(region) %}
+                  {% for comuna in comunas %}
+                    <option value="{{ comuna.comuna }}" {% if filter.comuna is same as(comuna.comuna) %} selected {% endif %}>{{ comuna.comuna }}</option>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </select>
+        </div>
+        <div class="col-md-4">
+          <select name="capa" id="capa" class="form-control w-100 ide-control">
+            <option value="">Seleccione un tipo de patrimonio</option>
+            {% for capa in capas %}
+              <option value="{{ capa.name }}" {% if filter.capa is same as(capa.name)  %} selected {% endif %}>{{ capa.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-md-8 col-md-4">
+          <input type="submit" class="form-control w-100 btn btn-ide-patrimonio-secondary" value="Buscar"/>
+        </div>
+      </div>
+    </form>
+
+    <div id="searchFilters" class="row row-cols-3 ">
+      <div class="col-auto {% if filter.region is same as ('') %}d-none {% endif %} mt-3" id="filterRegionDiv">
+        <div>
+          <span id="filterRegionButtonText">{{ filter.region }}</span>
+          <button id="btnFilterHideRegion" class="btn-transparent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.668" height="17" viewBox="0 0 21.668 21.668">
+              <g id="Grupo_15435" data-name="Grupo 15435" transform="translate(2.121 2.121)">
+                <line id="Línea_64" data-name="Línea 64" y1="24.642" transform="translate(17.425 17.425) rotate(135)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="3"/>
+                <line id="Línea_65" data-name="Línea 65" y2="24.642" transform="translate(17.425) rotate(45)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="3"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="col-auto {% if filter.comuna is same as ('') %}d-none {% endif %}mt-3" id="filterComunaDiv">
+        <div>
+          <span id="filterComunaButtonText">{{ filter.comuna }}</span>
+          <button id="btnFilterHideComuna" class="btn-transparent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.668" height="17" viewBox="0 0 21.668 21.668">
+              <g id="Grupo_15435" data-name="Grupo 15435" transform="translate(2.121 2.121)">
+                <line id="Línea_64" data-name="Línea 64" y1="24.642" transform="translate(17.425 17.425) rotate(135)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="3"/>
+                <line id="Línea_65" data-name="Línea 65" y2="24.642" transform="translate(17.425) rotate(45)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="3"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="col-auto {% if filter.capa is same as ('') %}d-none {% endif %}mt-3" id="filterCapaDiv">
+        <div>
+          <span id="filterCapaButtonText">{{ filter.capa }}</span>
+          <button id="btnFilterHideCapa" class="btn-transparent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.668" height="17" viewBox="0 0 21.668 21.668">
+              <g id="Grupo_15435" data-name="Grupo 15435" transform="translate(2.121 2.121)">
+                <line id="Línea_64" data-name="Línea 64" y1="24.642" transform="translate(17.425 17.425) rotate(135)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="3"/>
+                <line id="Línea_65" data-name="Línea 65" y2="24.642" transform="translate(17.425) rotate(45)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="3"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="col-auto {% if noFilters %}d-none {% endif %} mt-3" id="limpiarTodoDiv">
+        <div>
+          <span>Limpiar todo</span>
+          <button id="btnFilterHideAll" class="btn-transparent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21.668" height="17" viewBox="0 0 21.668 21.668">
+              <g id="Grupo_15435" data-name="Grupo 15435" transform="translate(2.121 2.121)">
+                <line id="Línea_64" data-name="Línea 64" y1="24.642" transform="translate(17.425 17.425) rotate(135)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="3"/>
+                <line id="Línea_65" data-name="Línea 65" y2="24.642" transform="translate(17.425) rotate(45)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="3"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col center-vertical">
+        <div id="patrimonios-title-container" class="my-auto">
+          {% if noFilters %}
+            <h4><strong>{{ totalItems }} Patrimonios</strong></h4>
+          {% else %}
+            <h4><strong>Registros encontrados {{ totalItems }} </strong></h4>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="row">
+          <div class="col-auto">
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="resultPerPage">mostrar</label>
+                <select id="resultPerPage" class="form-control ml-2 p-0">
+                  <option value="6" {% if filter.resultsPerPage is same as(6) %} selected {% endif %}>06</option>
+                  <option value="9" {% if filter.resultsPerPage is same as(9) %} selected {% endif %}>09</option>
+                  <option value="12" {% if filter.resultsPerPage is same as(12) %} selected {% endif %}>12</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+
+            {% if pager %}
+              {{ pager }}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="horizontal-line">
+
+    {% set columns = 3 %}
+    <div class=" my-5 patrimonios">
+      <div class="row">
+        {% for p in patrimonios %}
+        <div class="col-md-4">
+          <div class="card">
+            <a href="{{ path('ide_patrimonio.patrimonio.show', {'patrimonio': p.id}) }}">
+              <img class="card-img-top {{ 'images/capas' in p.url and '_540.png' in p.url  ? 'img-ic-capa' : '' }}" src="{{ p.url }}" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <div class="card-title">
+                <h5 class="max-lines-2" title="{{ p.name }}"><a href="{{ path('ide_patrimonio.patrimonio.show', {'patrimonio': p.id}) }}">{{ p.name }}</a></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% if loop.index%columns == 0 %}
+      </div>
+      <div class="row mt-3">
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-auto">
+        <div class="form-inline">
+          <div class="form-group">
+            <label for="resultPerPageBottom">mostrar</label>
+            <select id="resultPerPageBottom" class="form-control ml-2 p-0">
+              <option value="6" {% if filter.resultsPerPage is same as(6) %} selected {% endif %}>06</option>
+              <option value="9" {% if filter.resultsPerPage is same as(9) %} selected {% endif %}>09</option>
+              <option value="12" {% if filter.resultsPerPage is same as(12) %} selected {% endif %}>12</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto">
+
+        {% if pager %}
+          {{ pager }}
+        {% endif %}
+      </div>
+    </div>
+
+    {% if showVisorSliderEstadisticas %}
+      <div class="ide-iframe-container mb-40">
+        <iframe height="400" id="iframe-field_iframe" title=""
+                allow="autoplay,camera,microphone,payment,accelerometer,geolocation,encrypted-media,gyroscope"
+                src="{{ urlIframeVisor }}"
+                class="w-100 mt-17">
+        </iframe>
+        <img src="/{{ module_path }}/assets/images/simbologia.png"
+             alt="iframe-visor-territorial-leyenda" class="w-100 mt-25">
+
+      </div>
+      {% include '@ide_patrimonio/partials/statistics-slider.html.twig' %}
+    {%  endif %}
+
+  </div>
+</div>

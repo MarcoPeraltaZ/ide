@@ -1,0 +1,33 @@
+uuid: f5be8194-3e2e-4d9b-8712-2b76e8b82e24
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - idepatrimonio
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: idepatrimonio_page_title
+theme: idepatrimonio
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      flexslider_example: flexslider_example
+      page: page
+      que_es: que_es
+      slider_principal: slider_principal
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

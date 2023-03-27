@@ -1,0 +1,30 @@
+# Custom module library for general purposes.
+ide_patrimonio:
+  js:
+    #assets/js/ide-patrimonio.js: {}
+  css:
+    component:
+      assets/css/ide-patrimonio.css: {}
+
+ide_patrimonio_patrimonios:
+  js:
+    assets/js/patrimonios.js: {}
+
+ide_patrimonio_slider:
+  remote: http://flexslider.woothemes.com
+  license:
+    name: GNU-GPL-2.0-or-later
+    url: https://github.com/woothemes/FlexSlider/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    /libraries/flexslider/jquery.flexslider-min.js: { minified: true }
+    assets/js/slider.js: { }
+  css:
+    component:
+      /libraries/flexslider/flexslider.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - ide_patrimonio/ide_patrimonio

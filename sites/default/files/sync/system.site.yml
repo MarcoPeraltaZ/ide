@@ -1,0 +1,14 @@
+uuid: ce0ca79d-fed3-4bd0-ba8b-764ceed226ad
+name: 'IDE Patrimonio'
+mail: manuel.canales@biosoft.cl
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/10
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

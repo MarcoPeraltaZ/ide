@@ -1,0 +1,94 @@
+uuid: 79a38d97-d163-49fe-a1ac-636e222258b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.capa.field_capa_imagen
+    - field.field.node.capa.field_capa_link
+    - node.type.capa
+  module:
+    - ds
+    - field_group
+    - link
+    - user
+third_party_settings:
+  field_group:
+    group_card_body:
+      children:
+        - field_capa_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: card-body
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Card body'
+  ds:
+    layout:
+      id: ds_reset
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_capa_imagen
+        - group_card_body
+        - field_capa_link
+id: node.capa.default
+targetEntityType: node
+bundle: capa
+mode: default
+content:
+  field_capa_imagen:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: bare
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    region: ds_content
+  field_capa_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: link
+    region: ds_content
+hidden:
+  langcode: true
+  links: true

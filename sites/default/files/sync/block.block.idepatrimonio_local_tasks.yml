@@ -1,0 +1,22 @@
+uuid: 7bc0aff2-7fd2-4df1-9917-f2a1429a75fa
+langcode: es
+status: true
+dependencies:
+  theme:
+    - idepatrimonio
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: idepatrimonio_local_tasks
+theme: idepatrimonio
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

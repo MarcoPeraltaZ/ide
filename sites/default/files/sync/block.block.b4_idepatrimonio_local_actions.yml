@@ -1,0 +1,20 @@
+uuid: f9453d76-d665-48a5-803d-d4fdbd261af5
+langcode: es
+status: true
+dependencies:
+  theme:
+    - b4_idepatrimonio
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: b4_idepatrimonio_local_actions
+theme: b4_idepatrimonio
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

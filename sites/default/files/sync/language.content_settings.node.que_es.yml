@@ -1,0 +1,11 @@
+uuid: 55c3f463-0915-4292-b671-683b55c4248d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.que_es
+id: node.que_es
+target_entity_type_id: node
+target_bundle: que_es
+default_langcode: site_default
+language_alterable: false

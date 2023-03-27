@@ -1,0 +1,25 @@
+uuid: ae642f4f-1a93-4841-ad95-6e960ed6f4f0
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.capa.field_capa_imagen
+    - field.field.node.capa.field_capa_link
+    - node.type.capa
+  module:
+    - user
+id: node.capa.teaser
+targetEntityType: node
+bundle: capa
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_capa_imagen: true
+  field_capa_link: true
+  langcode: true
